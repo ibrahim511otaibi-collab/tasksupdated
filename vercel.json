@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/tasks.html" },
+    { "source": "/tasks", "destination": "/tasks.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(tasks\\.html|tasks_logic\\.js)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    }
+  ]
+}
